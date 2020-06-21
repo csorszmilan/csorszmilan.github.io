@@ -74,7 +74,8 @@ color: darkred;
     padding: 14px 16px;
     color: salmon;
     font-family: "Museo";
-background-color: rgb(126, 3, 28);}
+background-color: rgb(126, 3, 28);
+text-decoration: none;}
 
     .info{
         text-align: center;
