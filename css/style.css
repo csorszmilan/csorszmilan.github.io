@@ -1,0 +1,85 @@
+@font-face{
+    font-family: Museo;
+    src: url("fonts/static/MuseoModerno-Regular.ttf");}
+@font-face{
+    font-family: Museolight;
+    src: url("fonts/static/MuseoModerno-Light.ttf");}
+@font-face{
+    font-family: bangers;
+    src: url("css/fonts/bangers/Bangers-Regular.ttf");}
+
+
+
+    h1{
+color: brown;
+text-align: center;
+font-family: "Museo"; }
+
+html{
+background-image: url(../img/patternfood.jpg);}
+
+
+h2{
+color: crimson;
+text-align: center;
+font-family: "Museo",Times, serif;}
+
+#akcio{
+    text-align:center ;
+    color: rgb(245, 37, 0);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: museolight;
+    background-color: wheat;
+    padding: 20px;
+    border: dashed 3px rgb(245, 37, 0);
+}
+
+#gratis{
+    border: dashed 3px, red;
+    margin: 20px;
+    color: red;
+    font-weight: 30px;
+    padding: 20px;}
+
+.bold{ font-weight: bold;}
+
+.img-div{background-color: orangered;}
+
+.img-div2{background-color: peru;}
+
+.menuimg{width: 150px;}
+
+
+img{width: 14.3%;
+box-shadow: 0 0 7px black;
+margin: 1%;}
+
+
+.main{text-align: center;
+font-family: "Museo", Times, serif;
+font-weight: 600;
+font-size: 50px;}
+
+.link{
+font-family: "Museothin",Times, serif;
+font-weight: 400;
+font-size: 20px;
+color: darkred;
+}
+
+.menü{
+    text-align: center;
+    margin: 15px;
+    padding: 14px 16px;
+    color: salmon;
+    font-family: "Museo";
+background-color: rgb(126, 3, 28);}
+
+    .info{
+        text-align: center;
+        color: maroon;
+        font-family: "Museolight";
+        font-weight: 500;
+    font-weight: bold;}
+    
