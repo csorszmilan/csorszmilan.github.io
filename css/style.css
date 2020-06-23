@@ -7,33 +7,40 @@
 @font-face{
     font-family: bangers;
     src: url("css/fonts/bangers/Bangers-Regular.ttf");}
+@font-face{
+    font-family: Beast;
+    src: url(/css/fonts/beast/PermanentMarker-Regular.ttf);
+}
 
 
 
-    h1{
-color: brown;
+h1{
+color:crimson ;
 text-align: center;
 font-family: "Museo"; }
 
 html{
-background-image: url(../img/patternfood.jpg);}
+background-image: url(../img/delux1.jpg);
+background-repeat:repeat-y;
+background-size: 100%;}
 
 
 h2{
-color: crimson;
+color: brown;
 text-align: center;
 font-family: "Museo",Times, serif;}
 
 #akcio{
     text-align:center ;
-    color: rgb(245, 37, 0);
+    color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: 600;
     font-family: museolight;
-    background-color: wheat;
+    background-color:rgb(126, 3, 28);
     padding: 20px;
-    border: dashed 3px rgb(245, 37, 0);
-}
+    border: dashed 3px firebrick;}
+
+
 
 #gratis{
     border: dashed 3px, red;
@@ -42,13 +49,15 @@ font-family: "Museo",Times, serif;}
     font-weight: 30px;
     padding: 20px;}
 
-.bold{ font-weight: bold;}
+.bold{ 
+    font-weight: bold;
+    font-weight: 700;}
 
-.img-div{background-color: orangered;}
+.img-div{background-color: rgb(126, 3, 28);}
 
-.img-div2{background-color: peru;}
+.img-div2{background-color:firebrick;}
 
-.menuimg{width: 150px;}
+.menuimg{width: 200px;}
 
 
 img{width: 14.3%;
@@ -56,31 +65,50 @@ box-shadow: 0 0 7px black;
 margin: 1%;}
 
 
-.main{text-align: center;
-font-family: "Museo", Times, serif;
+.main{
+text-align: center;
+font-family: "Beast", Times, serif;
 font-weight: 600;
-font-size: 50px;}
+font-size: 70px;}
 
 .link{
-font-family: "Museothin",Times, serif;
-font-weight: 400;
-font-size: 20px;
-color: darkred;
-}
+    font-family: "Museothin",Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: darkred;}
+
+
+
 
 .menü{
     text-align: center;
     margin: 15px;
     padding: 14px 16px;
-    color: salmon;
+    color:crimson ;
     font-family: "Museo";
-background-color: rgb(126, 3, 28);
-text-decoration: none;}
+    background-color: rgb(126, 3, 28);
+    text-decoration: none;
+    border-radius: 20px;}
 
-    .info{
-        text-align: center;
-        color: maroon;
-        font-family: "Museolight";
-        font-weight: 500;
+
+.info{
+   text-align: center;
+    color: maroon;
+    font-family: "Museolight";
+    font-weight: 500;
     font-weight: bold;}
     
+.urlap{text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: darkred;
+    padding: 115px;   
+    border: solid 3px ;
+    box-shadow: tomato 20px;
+    display: inline-block;}
+
+    
+
+
+
+ 
