@@ -28,7 +28,8 @@ background-size: 100%;}
 h2{
 color: brown;
 text-align: center;
-font-family: "Museo",Times, serif;}
+font-family: "Museo",Times, serif;
+}
 
 #akcio{
     text-align:center ;
@@ -43,9 +44,9 @@ font-family: "Museo",Times, serif;}
 
 
 #gratis{
-    border: dashed 3px, red;
+    border: 3px, red;
     margin: 20px;
-    color: red;
+    color: crimson;
     font-weight: 30px;
     padding: 20px;}
 
@@ -82,30 +83,28 @@ font-size: 70px;}
 
 .menü{
     text-align: center;
-    margin: 15px;
-    padding: 14px 16px;
+    margin: 20px;
+    padding: 16px 16px;
     color:crimson ;
     font-family: "Museo";
-    background-color: rgb(126, 3, 28);
+    background-color: rgb(126, 3, 28, 0.5);
     text-decoration: none;
     border-radius: 20px;}
 
 
 .info{
    text-align: center;
-    color: maroon;
+    color: (126, 3, 28);
     font-family: "Museolight";
     font-weight: 500;
-    font-weight: bold;}
+    font-weight: bold;
+    color: tomato;}
     
-.urlap{text-align: center;
+.urlap{
     font-weight: 400;
     font-size: 20px;
-    color: darkred;
-    padding: 115px;   
-    border: solid 3px ;
-    box-shadow: tomato 20px;
-    display: inline-block;}
+    color: tomato;
+    box-shadow: tomato 20px;}
 
     
 

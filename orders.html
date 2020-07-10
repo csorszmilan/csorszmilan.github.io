@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rendelés</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/fontawsome/fontawesome-free-5.13.1-web/css/all.css">
-    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+
+    
 
 </head>
 
 <body>
-
+    <h1 class="main">Beast burgers !</h1>
     <h2>
         <a class="menü" href="/">Főoldal</a>
 
@@ -28,84 +29,160 @@
     </h2>
 
     <h1 class="main">
-        Make your own burger !
+        Order your burger !
     </h1>
 
     <div class="urlap">
-        <form>
-            <fieldset>
-                <legend> Személyes Adatok</legend>
-                <div>
-                    <label for="name"> Név : </label>
-                    <input id="name" name="name" type="text" required>
-                </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form>
+                <fieldset>
+                    <legend> Személyes Adatok</legend>
+                    <div>
+                        <label for="name"> Név *: </label>
+                        <input id="name" name="name" type="text" placeholder="  Név" required>
+                    </div>
 
-                <div>
-                    <label for="email"> Email cím : </label>
-                    <input id="email" name="email" type="email" required>
-                </div>
+                    <div>
+                        <label for="email"> Email cím *: </label>
+                        <input id="email" name="email" type="email" placeholder="  Email" required>
+                    </div>
+                    <div>
+                        <label for="telephone"> Telefonszám *: </label>
+                        <input id="telephone" name="telephone" type="telephone" placeholder="  Telefonszám" required>
+                    </div>
+                    <div>
+                        <label for="adress"> Rendelési cím *: </label>
+                        <input id="adress" name="adress" type="adress" placeholder="  Cím" required>
+                    </div>
 
-                <div>
-                    <label for="adress"> Rendelési cím : </label>
-                    <input id="adress" name="adress" type="adress" required>
-                </div>
+                    <div>
+                        <label for="comment"> Megjegyzés : </label>
+                        <textarea id="comment" name="comment" rows="3"> </textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="burgers">
+                    <legend> Kiválasztott burger:</legend>
 
-                <div>
-                    <label for="comment"> Megjegyzés : </label>
-                    <textarea id="comment" name="comment" rows="3"> </textarea>
-                </div>
-            </fieldset>
-            
-            
-            <fieldset>
-                <legend> Extra Feltét:</legend>
-                <div>
-                    <input checked id=nothing name="nothing" type="checkbox" value="0">
-                    <label for="nothing"> Nem kérek extra feltétet</label>
-                </div>
-                <div>
-                    <input checked id=cheese name="extra" type="checkbox" value="300">
-                    <label for="cheese"> Extra chedar sajt</label>
-                </div>
-                <div>
-                    <input checked id=bacon name="extra" type="checkbox" value="400">
-                    <label for="bacon"> Extra bacon</label>
-                </div>
-                <div>
-                    <input checked id=meat name="extra" type="checkbox" value="800">
-                    <label for="meat"> Extra angus hús</label>
-                </div>
-                <div>
-                    <input checked id=jalapeno name="extra" type="checkbox" value="300" >
-                    <label for="jalapeno"> Extra jalapeno</label>
-                </div>
-                <div>
-                    <label for="sauce">Szósz:</label>
-                    <select  id="sauce"name="sauce">
-                    <option value="100">Háromborsos szósz</option>
-                    <option value="200">Mézes mustár</option>
-                    <option value="300">Kéksajt mártás</option>
-                    <option value="200">Carolina reaper chiliszósz</option>
-                </select>
-            </div>
-            <div>
-                <label for="quantity">Mennyiség:</label>
-                <input id="quantity" name="quantity" type="text" min="1" max="10" value="1">
-            
-            </div>
-            </fieldset>
-<div>
-    <input type="button" value="Rendelés leadása">Ár : <span> 1200 Ft </span>
-</div>
 
-        </form>
+                    <div>
+                        <input checked id=cheeseburger name="burger" type="radio" value="2500">
+                        <label for="cheeseburger"> Cheese Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=barbecueburger name="burger" type="radio" value="2800">
+                        <label for="barbecueburger"> Barbecue Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=goatcheeseburger name="burger" type="radio" value="2800">
+                        <label for="goatcheeseburger"> Goatcheese Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=luckyburger name="burger" type="radio" value="2500">
+                        <label for="luckyburger"> Lucky Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=jalapenosburger name="burger" type="radio" value="3000">
+                        <label for="jalapenosburger"> Jalapeno Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=chefburger name="burger" type="radio" value="4000">
+                        <label for="chefburger"> Chef Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=Ulimatecheese name="burger" type="radio" value="4200">
+                        <label for="Ulimatecheese"> Ulimatecheese Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=veganburger name="burger" type="radio" value="3200">
+                        <label for="veganburger"> Vegan Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=amaricanburger name="burger" type="radio" value="4000">
+                        <label for="amaricanburger"> The amarican Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=gooseliverburger name="burger" type="radio" value="5000">
+                        <label for="gooseliverburger"> Goose liver Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=Pulledporkburger name="burger" type="radio" value="3000">
+                        <label for="Pulledporkburger"> Pulledpork Burger</label>
+                    </div>
+                    <div>
+                        <input checked id=basicburger name="burger" type="radio" value="2000">
+                        <label for="basicburger"> Basic Burger</label>
+                    </div>
+                    <fieldset>
+                        <legend> Extra Feltét:</legend>
+
+                        <div>
+                            <input checked id=cheese name="extra" type="radio" value="300">
+                            <label for="cheese"> Extra chedar sajt (+300 Ft)</label>
+                        </div>
+                        <div>
+                            <input checked id=bacon name="extra" type="radio" value="400">
+                            <label for="bacon"> Extra bacon (+400 Ft)</label>
+                        </div>
+                        <div>
+                            <input checked id=meat name="extra" type="radio" value="1000">
+                            <label for="meat"> Extra angus hús (+1000 Ft)</label>
+                        </div>
+                        <div>
+                            <input checked id=esb name="extra" type="radio" value="600">
+                            <label for="esb"> Extra sajt & bacon (+600 Ft)</label>
+                        </div>
+                        <div>
+                            <input checked id=esh name="extra" type="radio" value="1200">
+                            <label for="esh"> Extra sajt & hús (+1200 Ft)</label>
+                        </div>
+                        <div>
+                            <input checked id=nothing name="extra" type="radio" value="0">
+                            <label for="nothing"> Nem kérek extra feltétet</label>
+                        </div>
+                        <div>
+                            <label for="sauce">Szósz:</label>
+                            <select id="sauce" name="sauce-input">
+                                <option value="0">Nem kérek extra szószt</option>
+                                <option value="200">Mézes mustár</option>
+                                <option value="300">Kéksajt mártás</option>
+                                <option value="200">Carolina reaper chiliszósz</option>
+                                <option value="200">Édes chili szósz</option>
+                                <option value="200">Bazsalikomos Mayo</option>
+                                <option value="300">Érlelt chedarsajt mártás</option>
+                                <option value="200">Wasabi mayo </option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="quantity">Mennyiség:</label>
+                            <input id="quantity" name="amount-input" type="text" min="1" max="10" value="1">
+                            <small> ( Minimum 1, maximum 10 db rendelhető ) </small>
+
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            Fizetendő : <span class="show-amount"> 0 </span> Ft
+                        </div>
+                            <button onclick="sendOrderData()" type="button">Rendelés leadása</button> 
+                        
+                    </fieldset>
+
+            </form>
+        </div>
+        <div class="col-3"></div>
     </div>
+</div>
+   </div>
 
 
 
 
+ <script src="js/main.js"> </script>
 
-
+   
 
 
 
